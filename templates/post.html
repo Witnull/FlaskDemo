@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post - {{ post_id }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .post {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .post .author {
+            font-weight: bold;
+        }
+        .post .content {
+            margin-top: 10px;
+        }
+        .post .date {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="author">John Doe</div>
+            <div class="date">April 10, 2024</div>
+            <div class="content">
+                <p>This is the content of the post with ID: {{ post_id|upper }}. It may contain text, images, or other media.</p>
+            </div>
+        </div>
+        <!-- You can add more posts here dynamically if needed -->
+    </div>
+</body>
+</html>

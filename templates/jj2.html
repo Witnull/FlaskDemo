@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page</title>
+    <!-- Include CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = cssFile) }}">
+</head>
+<body>
+    <h1>Welcome to Your Page</h1>
+    <!-- Your HTML content goes here -->
+    
+    <!-- Include JavaScript file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
